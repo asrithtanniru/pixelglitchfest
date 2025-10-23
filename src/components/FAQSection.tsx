@@ -1,9 +1,6 @@
 'use client'
 
-import { useState } from 'react'
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from '@/components/ui/accordion'
-import { FaUsers, FaClipboardList, FaCog, FaGavel, FaScroll, FaUpload, FaHandshake } from 'react-icons/fa'
-
 const faqs = [
   {
     question: 'Are there mentors available during the event?',
@@ -50,26 +47,13 @@ const faqs = [
   },
 ]
 
-const categories = {
-  participation: { name: 'Participation', icon: FaUsers, color: 'chart-1' },
-  logistics: { name: 'Logistics', icon: FaClipboardList, color: 'chart-2' },
-  technical: { name: 'Technical', icon: FaCog, color: 'chart-3' },
-  judging: { name: 'Judging', icon: FaGavel, color: 'chart-4' },
-  rules: { name: 'Rules', icon: FaScroll, color: 'chart-5' },
-  submission: { name: 'Submission', icon: FaUpload, color: 'chart-1' },
-  legal: { name: 'Legal', icon: FaGavel, color: 'chart-2' },
-  support: { name: 'Support', icon: FaHandshake, color: 'chart-3' },
-}
-
 export default function FAQSection() {
-  const [openIndex, setOpenIndex] = useState<number | null>(null)
-
   return (
     <section className="py-16 bg-secondary-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-4xl sm:text-5xl font-tech font-bold text-foreground mb-4">Frequently Asked Questions</h2>
-          <p className="text-lg font-tech text-foreground/70 max-w-2xl mx-auto">Got questions? We've got answers! Here's everything you need to know about Game Jam 2025</p>
+          <p className="text-lg font-tech text-foreground/70 max-w-2xl mx-auto">Got questions? We&apos;ve got answers! Here&apos;s everything you need to know about Game Jam 2025</p>
         </div>
 
         <div className="max-w-4xl mx-auto">

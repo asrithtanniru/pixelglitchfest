@@ -1,6 +1,7 @@
 'use client'
 
 import { Button } from '@/components/ui/button'
+import Image from 'next/image'
 import { FaDiscord, FaGithub, FaInstagram, FaGamepad, FaArrowUp } from 'react-icons/fa'
 
 const socialLinks = [
@@ -16,8 +17,8 @@ const quickLinks = [
 ]
 
 const collaborators = [
-  { name: 'NextTechLab', role: 'Lead Organizer', image: '/images/ntl_icon.png' },
-  { name: 'HatchLab Research Centre', role: 'Research Partner', image: '/images/ntl_icon.png' },
+  { name: 'Next Tech Lab', role: 'Lead Organizer', image: '/images/ntl_icon.png' },
+  // { name: 'HatchLab Research Centre', role: 'Research Partner', image: '/images/ntl_icon.png' },
   // { name: 'Community', role: 'Community Partner',image:'/images/ntl_icon.png'  },
 ]
 
@@ -86,12 +87,12 @@ export default function Footer() {
 
         <div className="border-t-2 border-border pt-8">
           <div className="flex flex-wrap items-center justify-center md:justify-start gap-4">
-            <div className="text-base font-tech font-bold text-foreground whitespace-nowrap">Jointly organized by:</div>
+            <div className="text-base font-tech font-bold text-foreground whitespace-nowrap">Organized by:</div>
 
             <div className="flex flex-wrap items-center gap-4">
               {collaborators.map((collab, index) => (
                 <div key={index} className="flex items-center gap-2">
-                  <img src={collab.image} alt={collab.name} className="h-5 w-auto" />
+                  <Image src={collab.image} alt={collab.name} width={40} height={40} className="h-5 w-auto" />
                   <div className="text-sm font-tech font-semibold text-foreground">{collab.name}</div>
                 </div>
               ))}

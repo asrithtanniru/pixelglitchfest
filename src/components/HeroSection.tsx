@@ -173,9 +173,10 @@ export default function HeroSection() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button
               size="lg"
-              className="text-lg px-8 py-6 bg-chart-2 hover:bg-chart-2/90 border-2 border-border shadow-shadow hover:translate-x-1 hover:translate-y-1 hover:shadow-none font-rajdhani font-bold"
+              className="text-lg px-8 py-6 bg-chart-2 hover:bg-chart-2/90 border-2 border-border shadow-shadow hover:translate-x-1 
+              hover:translate-y-1 hover:shadow-none font-tech font-bold"
             >
-              <FaRocket className="mr-1" /> Register Now
+              <FaRocket className="mr-1" /> Opening Soon
             </Button>
             <Button variant="neutral" size="lg" className="text-lg px-8 py-6 font-tech">
               <FaCalendarAlt className="mr-1" /> View Schedule

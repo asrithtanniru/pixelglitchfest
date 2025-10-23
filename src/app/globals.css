@@ -3,25 +3,158 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: oklch(93.46% 0.0305 255.11);
+  --secondary-background: oklch(100% 0 0);
+  --foreground: oklch(0% 0 0);
+  --main-foreground: oklch(0% 0 0);
+  --main: oklch(67.47% 0.1726 259.49);
+  --border: oklch(0% 0 0);
+  --ring: oklch(0% 0 0);
+  --overlay: oklch(0% 0 0 / 0.8);
+  --shadow: 4px 4px 0px 0px var(--border);
+  --chart-1: #5294FF;
+  --chart-2: #FF4D50;
+  --chart-3: #FACC00;
+  --chart-4: #05E17A;
+  --chart-5: #7A83FF;
+  --chart-active-dot: #000;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+.dark {
+  --background: oklch(29.23% 0.0626 270.49);
+  --secondary-background: oklch(23.93% 0 0);
+  --foreground: oklch(92.49% 0 0);
+  --main-foreground: oklch(0% 0 0);
+  --main: oklch(67.47% 0.1726 259.49);
+  --border: oklch(0% 0 0);
+  --ring: oklch(100% 0 0);
+  --shadow: 4px 4px 0px 0px var(--border);
+  --chart-1: #5294FF;
+  --chart-2: #FF6669;
+  --chart-3: #E0B700;
+  --chart-4: #04C86D;
+  --chart-5: #7A83FF;
+  --chart-active-dot: #fff;
+}
+
+@layer base {
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-rethink-sans), 'Space Grotesk', sans-serif;
+    font-weight: 400;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+  }
+  
+  .font-base {
+    font-weight: 400;
+  }
+  
+  .font-heading {
+    font-weight: 700;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+/* Sonner Toast Neobrutalism Styles */
+[data-sonner-toaster] {
+  --normal-bg: var(--secondary-background);
+  --normal-border: var(--border);
+  --normal-text: var(--foreground);
+  --success-bg: #05E17A;
+  --success-border: var(--border);
+  --success-text: var(--main-foreground);
+  --error-bg: #FF4D50;
+  --error-border: var(--border);
+  --error-text: var(--main-foreground);
+  --warning-bg: #FACC00;
+  --warning-border: var(--border);
+  --warning-text: var(--main-foreground);
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+[data-sonner-toast] {
+  background: var(--normal-bg) !important;
+  border: 2px solid var(--normal-border) !important;
+  border-radius: 8px !important;
+  box-shadow: 4px 4px 0px 0px var(--border) !important;
+  font-family: 'Space Grotesk', sans-serif !important;
+  font-weight: 400 !important;
+  color: var(--normal-text) !important;
+  padding: 16px !important;
+  margin: 8px !important;
+}
+
+[data-sonner-toast][data-type="success"] {
+  background: var(--success-bg) !important;
+  color: var(--success-text) !important;
+  border-color: var(--success-border) !important;
+}
+
+[data-sonner-toast][data-type="error"] {
+  background: var(--error-bg) !important;
+  color: var(--error-text) !important;
+  border-color: var(--error-border) !important;
+}
+
+[data-sonner-toast][data-type="warning"] {
+  background: var(--warning-bg) !important;
+  color: var(--warning-text) !important;
+  border-color: var(--warning-border) !important;
+}
+
+[data-sonner-toast] [data-title] {
+  font-weight: 700 !important;
+  font-size: 16px !important;
+  margin-bottom: 4px !important;
+  color: inherit !important;
+}
+
+[data-sonner-toast] [data-description] {
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  opacity: 0.8 !important;
+  color: inherit !important;
+}
+
+[data-sonner-toast] [data-button] {
+  background: var(--main) !important;
+  color: var(--main-foreground) !important;
+  border: 2px solid var(--border) !important;
+  border-radius: 6px !important;
+  box-shadow: 2px 2px 0px 0px var(--border) !important;
+  font-family: 'Space Grotesk', sans-serif !important;
+  font-weight: 700 !important;
+  padding: 8px 16px !important;
+  margin-left: 12px !important;
+  transition: all 0.2s ease !important;
+}
+
+[data-sonner-toast] [data-button]:hover {
+  transform: translate(-1px, -1px) !important;
+  box-shadow: 3px 3px 0px 0px var(--border) !important;
+}
+
+[data-sonner-toast] [data-button]:active {
+  transform: translate(0px, 0px) !important;
+  box-shadow: 1px 1px 0px 0px var(--border) !important;
+}
+
+[data-sonner-toast] [data-close-button] {
+  background: transparent !important;
+  border: 2px solid var(--border) !important;
+  border-radius: 4px !important;
+  color: var(--foreground) !important;
+  width: 24px !important;
+  height: 24px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-size: 14px !important;
+  font-weight: 700 !important;
+}
+
+[data-sonner-toast] [data-close-button]:hover {
+  background: var(--border) !important;
 }

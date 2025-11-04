@@ -308,9 +308,9 @@ export default function HeroSection() {
             transition={{ duration: 0.8, delay: 1.7 }}
           >
             {[
-              { value: '24', label: 'Hours to Code', color: 'chart-1', delay: 0 },
-              { value: '10K', label: 'Prize Pool', color: 'chart-2', delay: 0.1 },
-              { value: '200+', label: 'Developers', color: 'chart-3', delay: 0.2 },
+              { value: '2', label: 'Day Workshop', color: 'chart-1', delay: 0 },
+              { value: '?', label: 'Prize Pool', color: 'chart-2', delay: 0.1 },
+              { value: '48', label: 'Hours GameJam', color: 'chart-3', delay: 0.2 },
             ].map((item, index) => (
               <motion.div
                 key={index}
@@ -340,8 +340,9 @@ export default function HeroSection() {
                 size="lg"
                 className="text-lg px-8 py-6 bg-chart-2 hover:bg-chart-2/90 border-2 border-border shadow-shadow hover:translate-x-1 
                 hover:translate-y-1 hover:shadow-none font-tech font-bold"
+                onClick={() => window.open('https://forms.gle/Ax2WcVyeCaMWhL1y7', '_blank')}
               >
-                <FaRocket className="mr-1" /> Opening Soon
+                <FaRocket className="mr-1" /> Register Now
               </Button>
             </motion.div>
             {/* <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>

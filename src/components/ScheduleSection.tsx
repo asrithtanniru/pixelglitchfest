@@ -1,34 +1,51 @@
 'use client'
 
 import { Card } from '@/components/ui/card'
-import { FaClipboardList, FaFlag, FaUsers, FaCode, FaPizzaSlice, FaCoffee, FaUtensils, FaChartBar, FaClock, FaMicrophone, FaTrophy, FaGlassCheers, FaLaptopCode, FaLightbulb } from 'react-icons/fa'
+import { FaFlag, FaUsers, FaCode, FaCoffee, FaChartBar, FaMicrophone, FaTrophy, FaLaptopCode, FaLightbulb } from 'react-icons/fa'
 
 export const scheduleData = [
   {
-    day: 'Day 1 - Friday',
-    date: 'October 10, 2025',
+    day: 'Day 1 - Unity Workshop',
+    date: 'Unity Basics & Game Development Fundamentals',
     events: [
-      { time: '9:00 AM', title: 'Registration & Welcome', type: 'admin', icon: FaClipboardList },
-      { time: '10:00 AM', title: 'Workshop: Rapid Game Prototyping', type: 'workshop', icon: FaLightbulb },
-      { time: '12:30 PM', title: 'Lunch Break', type: 'food', icon: FaUtensils },
-      { time: '2:00 PM', title: 'Mentor Connect & Team Networking', type: 'networking', icon: FaUsers },
-      { time: '5:30 PM', title: 'Opening Ceremony & Theme Reveal', type: 'main', icon: FaFlag },
-      { time: '7:00 PM', title: 'Hackathon Kickoff — Coding Begins!', type: 'coding', icon: FaCode },
-      { time: '10:00 PM', title: 'Late Night Snacks &amp; Brainstorming', type: 'food', icon: FaPizzaSlice },
+      { time: 'Hour 1-2', title: 'Basics of C# - Hello World, Data Types, Control Statements', type: 'workshop', icon: FaCode },
+      { time: 'Hour 3-4', title: 'Unity Editor Walkthrough - Physics, Materials, Lighting', type: 'workshop', icon: FaLaptopCode },
+      { time: '11:00 AM', title: '15 Minute Break', type: 'food', icon: FaCoffee },
+      { time: 'Hour 5', title: 'GDD Presentation - What is a Game? The Door Problem', type: 'demo', icon: FaMicrophone },
+      { time: 'Hour 6-7', title: 'Hello World In Unity - First C# Script, Game Object Cycle', type: 'coding', icon: FaLightbulb },
+      { time: '3:00 PM', title: '15 Minute Break', type: 'food', icon: FaCoffee },
+      { time: 'Hour 7-8', title: 'Activity of the Day - Your Game is too Big, Taxonomy of Player', type: 'workshop', icon: FaUsers },
     ],
   },
   {
-    day: 'Day 2 - Saturday',
-    date: 'October 11, 2025',
+    day: 'Day 2 - Unity Implementation',
+    date: 'Game Development & Testing',
     events: [
-      { time: '8:00 AM', title: 'Breakfast & Coffee', type: 'food', icon: FaCoffee },
-      { time: '9:00 AM', title: 'Continue Hacking', type: 'coding', icon: FaLaptopCode },
-      { time: '12:00 PM', title: 'Lunch Break', type: 'food', icon: FaUtensils },
-      { time: '2:00 PM', title: 'Progress Check-in with Mentors', type: 'mentoring', icon: FaChartBar },
-      { time: '4:00 PM', title: 'Submission Deadline', type: 'deadline', icon: FaClock },
-      { time: '4:30 PM', title: 'Project Demos & Presentations', type: 'demo', icon: FaMicrophone },
-      { time: '6:00 PM', title: 'Awards & Closing Ceremony', type: 'main', icon: FaTrophy },
-      { time: '7:00 PM', title: 'Celebration & Networking', type: 'networking', icon: FaGlassCheers },
+      { time: 'Hour 1-3', title: 'Implementation of Game - Character Controller, Projectile System, Health System', type: 'coding', icon: FaCode },
+      { time: '11:00 AM', title: '15 Minute Break', type: 'food', icon: FaCoffee },
+      { time: 'Hour 4-5', title: 'Polishing the Game - Sound Effects, Particles, User Interface (UI)', type: 'workshop', icon: FaChartBar },
+      { time: '3:00 PM', title: '15 Minute Break', type: 'food', icon: FaCoffee },
+      { time: 'Hour 6', title: 'Play Testing - Internal Testing, Player Experience', type: 'demo', icon: FaMicrophone },
+      { time: 'Hour 7', title: 'Feedback - Suggestions', type: 'mentoring', icon: FaUsers },
+      { time: 'Hour 8', title: 'Recap - Closing', type: 'main', icon: FaFlag },
+    ],
+  },
+  {
+    day: 'Day 3 - Extended Reality (VR/AR)',
+    date: 'VR Basics & Game Design',
+    events: [
+      { time: 'Hour 1-2', title: 'Basics of VR - Project Creation, Experiencing VR', type: 'workshop', icon: FaLightbulb },
+      { time: 'Hour 3-4', title: 'GDD Presentation - Game Idea, Player Experience', type: 'demo', icon: FaMicrophone },
+      { time: 'Hour 5-8', title: 'Grey Box - Player Mechanics, Game Mechanics', type: 'coding', icon: FaCode },
+    ],
+  },
+  {
+    day: 'Day 4 - Game Polish & Testing',
+    date: 'Final Implementation & Feedback',
+    events: [
+      { time: 'Hour 1-4', title: 'Game Juice - Sound Effects, Particle Effects, Game Manager', type: 'workshop', icon: FaChartBar },
+      { time: 'Hour 5-6', title: 'Play Testing - Experience the Game', type: 'demo', icon: FaMicrophone },
+      { time: 'Hour 7-8', title: 'Feedback & Closing - Suggestions', type: 'main', icon: FaTrophy },
     ],
   },
 ]
@@ -63,8 +80,8 @@ export default function ScheduleSection() {
     <section className="py-16 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-4xl sm:text-5xl font-tech font-bold text-foreground mb-4">48-Hour Timeline</h2>
-          <p className="text-lg font-tech text-foreground/70 max-w-2xl mx-auto">From kickoff to awards, here&apos;s your complete Game Jam journey</p>
+          <h2 className="text-4xl sm:text-5xl font-tech font-bold text-foreground mb-4">Workshop Timeline</h2>
+          <p className="text-lg font-tech text-foreground/70 max-w-2xl mx-auto">4-Day Unity & Extended Reality Workshop - From basics to VR/AR implementation</p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-8">

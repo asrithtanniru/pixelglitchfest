@@ -1,26 +1,26 @@
 'use client'
 
 import { Button } from '@/components/ui/button'
-import Image from 'next/image'
+// import Image from 'next/image'
 import { FaDiscord, FaGithub, FaInstagram, FaGamepad, FaArrowUp } from 'react-icons/fa'
 
 const socialLinks = [
-  { name: 'Discord', icon: FaDiscord, href: '#', bgColor: 'bg-[#5865F2]', hoverColor: 'hover:bg-[#4752C4]' },
-  { name: 'Instagram', icon: FaInstagram, href: '#', bgColor: 'bg-gradient-to-br from-[#833AB4] via-[#E1306C] to-[#FD1D1D]', hoverColor: 'hover:opacity-90' },
-  { name: 'GitHub', icon: FaGithub, href: '#', bgColor: 'bg-black', hoverColor: 'hover:bg-gray-800' },
+  { name: 'Discord', icon: FaDiscord, href: 'https://discord.gg/rsxVzb8a', bgColor: 'bg-[#5865F2]', hoverColor: 'hover:bg-[#4752C4]' },
+  { name: 'Instagram', icon: FaInstagram, href: 'https://www.instagram.com/nexttechlab_ap/', bgColor: 'bg-gradient-to-br from-[#833AB4] via-[#E1306C] to-[#FD1D1D]', hoverColor: 'hover:opacity-90' },
+  { name: 'GitHub', icon: FaGithub, href: 'https://github.com/NextTechLabAP', bgColor: 'bg-black', hoverColor: 'hover:bg-gray-800' },
 ]
 
-const quickLinks = [
-  { name: 'Register', href: '#register' },
-  { name: 'Schedule', href: '#schedule' },
-  { name: 'FAQ', href: '#faq' },
-]
+// const quickLinks = [
+//   { name: 'Register', href: '#register' },
+//   { name: 'Schedule', href: '#schedule' },
+//   { name: 'FAQ', href: '#faq' },
+// ]
 
-const collaborators = [
-  { name: 'Next Tech Lab', role: 'Lead Organizer', image: '/images/ntl_icon.png' },
-  // { name: 'HatchLab Research Centre', role: 'Research Partner', image: '/images/ntl_icon.png' },
-  // { name: 'Community', role: 'Community Partner',image:'/images/ntl_icon.png'  },
-]
+// const collaborators = [
+//   { name: 'Next Tech Lab', role: 'Lead Organizer', image: '/images/ntl_icon.png' },
+//   // { name: 'HatchLab Research Centre', role: 'Research Partner', image: '/images/ntl_icon.png' },
+//   // { name: 'Community', role: 'Community Partner',image:'/images/ntl_icon.png'  },
+// ]
 
 export default function Footer() {
   return (
@@ -38,38 +38,26 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="text-lg font-rajdhani font-bold text-foreground mb-4">Quick Links</h4>
-            <ul className="space-y-2">
-              {quickLinks.map((link, index) => (
-                <li key={index}>
-                  <a href={link.href} className="text-sm font-tech text-foreground/70 hover:text-foreground transition-colors">
-                    {link.name}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div>
             <h4 className="text-lg font-rajdhani font-bold text-foreground mb-4">Stay Connected</h4>
             <div className="flex flex-wrap gap-2 mb-6">
               {socialLinks.map((social, index) => {
                 const IconComponent = social.icon
                 return (
-                  <Button
-                    key={index}
-                    variant="noShadow"
-                    size="sm"
-                    className={`${social.bgColor} ${social.hoverColor} text-white font-tech text-xs shadow-shadow hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all`}
-                  >
-                    <IconComponent className="mr-1" />
-                    {social.name}
-                  </Button>
+                  <a key={index} href={social.href} target="_blank" rel="noopener noreferrer">
+                    <Button
+                      variant="noShadow"
+                      size="sm"
+                      className={`${social.bgColor} ${social.hoverColor} text-white font-tech text-xs shadow-shadow hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all`}
+                    >
+                      <IconComponent className="mr-1" />
+                      {social.name}
+                    </Button>
+                  </a>
                 )
               })}
             </div>
 
-            <div className="space-y-3">
+            {/* <div className="space-y-3">
               <p className="text-sm font-tech text-foreground/70">Get updates about Game Jam 2025</p>
               <div className="flex gap-2">
                 <input
@@ -81,10 +69,10 @@ export default function Footer() {
                   Subscribe
                 </Button>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
-
+        {/* 
         <div className="border-t-2 border-border pt-8">
           <div className="flex flex-wrap items-center justify-center md:justify-start gap-4">
             <div className="text-base font-tech font-bold text-foreground whitespace-nowrap">Organized by:</div>
@@ -98,7 +86,7 @@ export default function Footer() {
               ))}
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
 
       <div className="fixed bottom-6 right-6">

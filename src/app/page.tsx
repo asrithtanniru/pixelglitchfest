@@ -1,7 +1,7 @@
 import HeroSection from '@/components/HeroSection'
 import StatsSection from '@/components/StatsSection'
 import ScheduleSection from '@/components/ScheduleSection'
-import PrizesSection from '@/components/PrizesSection'
+// import PrizesSection from '@/components/PrizesSection'
 import SponsorsSection from '@/components/SponsorsSection'
 import FAQSection from '@/components/FAQSection'
 import Footer from '@/components/Footer'
@@ -12,7 +12,7 @@ export default function Home() {
       <HeroSection />
       <StatsSection />
       <ScheduleSection />
-      <PrizesSection />
+      {/* <PrizesSection /> */}
       <SponsorsSection />
       <FAQSection />
       <Footer />

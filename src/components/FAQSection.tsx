@@ -3,47 +3,69 @@
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from '@/components/ui/accordion'
 const faqs = [
   {
-    question: 'Are there mentors available during the event?',
-    answer: 'Absolutely! NTL is here!!!!!',
-  },
-  {
-    question: 'Who can participate in the Game Jam?',
+    question: 'What is Pixel Glitch Fest?',
     answer:
-      "Anyone passionate about game development! Whether you're a seasoned developer, a design student, or a complete beginner, you're welcome. We encourage teams of 2-5 people with diverse skills.",
-  },
-
-  {
-    question: 'Do I need a team to participate?',
-    answer: "Not necessarily! You can register solo and we'll help you find teammates during our team formation session on Friday evening. Many great friendships and partnerships start at Game Jams!",
+      "Pixel Glitch Fest is a 4-day celebration of game creation and creativity, hosted by Galactic Geeks (Pangaea Corp) in collaboration with Next Tech Lab, SRM University AP. It's split into two parts: 2-Day Workshop — Learn the essentials of Unity, C#, and game design. 2-Day Game Jam — Team up, build a game, and show off your creativity under a common theme.",
   },
   {
-    question: 'What should I bring to the event?',
+    question: 'When and where is it happening?',
+    answer: 'Venue: SRM University AP Campus. Duration: 4 days total — 2 days of workshop + 2 days of jam.',
+  },
+  {
+    question: 'Who can participate?',
+    answer: "Anyone interested in game design, art, development, storytelling, or music — no prior experience required! We'll guide you from zero to your first playable game.",
+  },
+  {
+    question: 'What will I learn in the workshop?',
     answer:
-      "Bring your laptop, chargers, any development software you prefer, and your creativity! We'll provide food, drinks, and a comfortable workspace. Don't forget a sleeping bag if you plan to stay overnight!",
+      "You'll get hands-on experience with: Setting up a Unity project and importing assets, Understanding the Unity Editor & project structure, Basics of C# scripting and game logic, Player input handling using the Input System, Cinemachine for camera control, Unity's physics system, Basic UI design and stat updates, Structuring your game with a Game Manager. By the end of Day 2, you'll have the foundation needed to start your own game project.",
   },
   {
-    question: 'Are there any restrictions on game engines or tools?',
+    question: 'What happens during the Game Jam?',
     answer:
-      "No restrictions! Use Unity, Unreal Engine, Godot, GameMaker, or even code from scratch. We encourage using tools you're comfortable with to maximize your productivity during the 48 hours.",
+      "You'll form teams and get a secret theme at the start of Day 3. Over 48 hours, you'll brainstorm, design, and develop a playable game prototype. You'll be mentored by: A Game Designer for concept and mechanics, A 3D Artist / Level Designer for visuals, A Programmer for implementation guidance, A Mentor Panel for direction and troubleshooting.",
   },
   {
-    question: 'What are the judging criteria?',
+    question: 'Is there a prize or recognition?',
     answer:
-      'Games are judged on creativity, technical implementation, theme adherence, and overall fun factor. We have industry professionals as judges who will provide valuable feedback on all submissions.',
+      "Yes! The top games will be showcased and rewarded based on creativity, design, fun factor, and technical execution. Even if you don't win — you'll leave with a finished game and real teamwork experience.",
   },
   {
-    question: 'Can I start working on my game before the event?',
+    question: 'Do I need to bring my own assets or tools?',
+    answer: "Not necessarily. We'll provide a starter asset pack for quick prototyping. But if you want to bring your own 2D/3D assets, music, or tools — go for it!",
+  },
+  {
+    question: 'What software will we use?',
+    answer: 'Unity (latest stable LTS release), Visual Studio Code or Visual Studio Community, Optional: Blender / Krita / Photoshop / Figma (for art and design)',
+  },
+  {
+    question: 'How are teams formed?',
+    answer: "You can either: Register as a team (up to 4 members) or register solo and we'll help you find teammates during the mixer session.",
+  },
+  {
+    question: 'What is the schedule like?',
+    answer: 'Day 1–2: Workshop (Learning + Practice), Day 3–4: Game Jam (Theme Reveal + Development + Submission), Final Evening: Game Showcase & Results',
+  },
+  {
+    question: 'Who are the mentors?',
     answer:
-      'No! All game development must happen during the 48-hour window. However, you can prepare by learning new tools, forming teams, and brainstorming general ideas (but no actual development).',
+      'Industry professionals and experienced developers from Galactic Geeks and Next Tech Lab will be guiding you — people who have built games, shipped prototypes, and tinkered with engines at all scales.',
   },
   {
-    question: 'Is food and accommodation provided?',
-    answer:
-      'Yes! We provide all meals, snacks, and beverages throughout the event. The venue is open 24/7, and we have quiet spaces for those who want to rest. Sleeping bags and pillows are recommended.',
+    question: 'Do I need to bring a laptop?',
+    answer: "Yes — bring your own laptop with Unity installed. We'll share installation and setup instructions before the event.",
   },
   {
-    question: 'How do I submit my game?',
-    answer: "Games must be submitted through our online portal by 1:00 PM on Sunday. We'll provide detailed submission guidelines including required files, demo videos, and documentation.",
+    question: 'Will there be internet and power backup?',
+    answer: 'Yes. SRM University will provide Wi-Fi and charging stations in the development area.',
+  },
+  {
+    question: 'Food and refreshments?',
+    answer: 'Yes! Expect snacks, caffeine, and chaos. Game dev runs on pizza and energy drinks.',
+  },
+  {
+    question: 'Can we continue the project after the event?',
+    answer: 'Absolutely. You own your project — continue refining it, post it on itch.io, or even publish it!',
   },
 ]
 
@@ -52,8 +74,8 @@ export default function FAQSection() {
     <section className="py-16 bg-secondary-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-4xl sm:text-5xl font-tech font-bold text-foreground mb-4">Frequently Asked Questions</h2>
-          <p className="text-lg font-tech text-foreground/70 max-w-2xl mx-auto">Got questions? We&apos;ve got answers! Here&apos;s everything you need to know about Game Jam 2025</p>
+          <h2 className="text-4xl sm:text-5xl font-tech font-bold text-foreground mb-4">Pixel Glitch Fest - FAQ</h2>
+          <p className="text-lg font-tech text-foreground/70 max-w-2xl mx-auto">Got questions? We&apos;ve got answers! Here&apos;s everything you need to know about Pixel Glitch Fest</p>
         </div>
 
         <div className="max-w-4xl mx-auto">

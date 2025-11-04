@@ -1,13 +1,13 @@
 'use client'
 
 import { Card } from '@/components/ui/card'
-import { FaTrophy, FaMedal, FaAward, FaPalette, FaCog, FaStar, FaHeart } from 'react-icons/fa'
+import { FaTrophy, FaMedal } from 'react-icons/fa'
 
 const prizes = [
   {
     place: '1st Place',
     title: 'Grand Champion',
-    amount: '₹5,000',
+    amount: '?',
     color: 'chart-1',
     icon: FaTrophy,
     features: ['Cash Prize', 'Certificate', 'Swag'],
@@ -15,47 +15,39 @@ const prizes = [
   {
     place: '2nd Place',
     title: 'Rising Star',
-    amount: '₹3,000',
+    amount: '?',
     color: 'chart-2',
     icon: FaMedal,
     features: ['Cash Prize', 'Certificate', 'Swag'],
   },
-  {
-    place: '3rd Place',
-    title: 'Innovation Award',
-    amount: '₹2,000',
-    color: 'chart-3',
-    icon: FaAward,
-    features: ['Cash Prize', 'Certificate', 'Swag'],
-  },
 ]
 
-const specialAwards = [
-  {
-    title: 'Best Art & Design',
-    amount: '$500',
-    icon: FaPalette,
-    color: 'chart-4',
-  },
-  {
-    title: 'Best Technical Innovation',
-    amount: '$500',
-    icon: FaCog,
-    color: 'chart-5',
-  },
-  {
-    title: 'Best Newcomer Team',
-    amount: '$500',
-    icon: FaStar,
-    color: 'chart-1',
-  },
-  {
-    title: "People's Choice",
-    amount: '$500',
-    icon: FaHeart,
-    color: 'chart-2',
-  },
-]
+// const specialAwards = [
+//   {
+//     title: 'Best Art & Design',
+//     amount: '$500',
+//     icon: FaPalette,
+//     color: 'chart-4',
+//   },
+//   {
+//     title: 'Best Technical Innovation',
+//     amount: '$500',
+//     icon: FaCog,
+//     color: 'chart-5',
+//   },
+//   {
+//     title: 'Best Newcomer Team',
+//     amount: '$500',
+//     icon: FaStar,
+//     color: 'chart-1',
+//   },
+//   {
+//     title: "People's Choice",
+//     amount: '$500',
+//     icon: FaHeart,
+//     color: 'chart-2',
+//   },
+// ]
 
 export default function PrizesSection() {
   return (
@@ -63,9 +55,8 @@ export default function PrizesSection() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-4xl sm:text-5xl font-tech font-bold text-foreground mb-4">Epic Rewards</h2>
-          <p className="text-lg font-tech text-foreground/70 max-w-2xl mx-auto">$10,000+ in prizes and opportunities for the most innovative games</p>
         </div>
-        <div className="grid md:grid-cols-3 gap-8 mb-16">
+        <div className="grid md:grid-cols-2 gap-8 mb-16">
           {prizes.map((prize, index) => (
             <Card key={index} className="p-8 text-center relative overflow-hidden flex flex-col justify-center items-center transition-all hover:translate-x-1 hover:translate-y-1 hover:shadow-none">
               <div className={`absolute top-0 left-0 w-full h-2 bg-${prize.color}`}></div>
@@ -75,7 +66,7 @@ export default function PrizesSection() {
                 </div>
                 <h3 className="text-lg font-tech font-bold text-foreground/60 mb-2">{prize.place}</h3>
                 <h4 className="text-2xl font-tech font-bold text-foreground mb-2">{prize.title}</h4>
-                <div className="text-3xl font-tech font-bold text-chart-1 mb-6">{prize.amount}</div>
+                <div className="text-3xl font-tech font-bold text-chart-3 mb-6">{prize.amount}</div>
                 <ul className="space-y-2 mb-6">
                   {prize.features.map((feature, featureIndex) => (
                     <li key={featureIndex} className="flex items-center justify-center gap-2 text-sm font-tech text-foreground/70">
@@ -88,7 +79,7 @@ export default function PrizesSection() {
             </Card>
           ))}
         </div>
-
+        {/* 
         <div className="mb-12">
           <h3 className="text-2xl font-tech font-bold text-center text-foreground mb-8">Special Category Awards</h3>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -101,7 +92,7 @@ export default function PrizesSection() {
               </Card>
             ))}
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   )

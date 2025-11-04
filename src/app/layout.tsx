@@ -45,7 +45,7 @@ const geistMono = localFont({
 })
 
 export const metadata: Metadata = {
-  title: 'Game Jam 2025',
+  title: 'Pixel Glitch Fest',
   description: 'Code. Create. Compete.',
 }
 

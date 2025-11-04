@@ -4,7 +4,7 @@ import Image from 'next/image'
 const sponsors = {
   madePossibleBy: [
     { name: 'SRM University AP', logo: '/images/srmlogo.png' },
-    { name: 'HatchLab', logo: '/images/hatchlab-logo.png' },
+    { name: 'HatchLab', logo: '/images/hatchlab.png' },
     { name: 'Meity', logo: '/images/meity-logo.png' },
   ],
   hostedBy: [

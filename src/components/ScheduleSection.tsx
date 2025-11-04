@@ -1,7 +1,7 @@
 'use client'
 
 import { Card } from '@/components/ui/card'
-import { FaFlag, FaUsers, FaCode, FaCoffee, FaChartBar, FaMicrophone, FaTrophy, FaLaptopCode, FaLightbulb } from 'react-icons/fa'
+import { FaFlag, FaUsers, FaCode, FaCoffee, FaChartBar, FaMicrophone, FaLaptopCode, FaLightbulb } from 'react-icons/fa'
 
 export const scheduleData = [
   {
@@ -30,24 +30,24 @@ export const scheduleData = [
       { time: 'Hour 8', title: 'Recap - Closing', type: 'main', icon: FaFlag },
     ],
   },
-  {
-    day: 'Day 3 - Extended Reality (VR/AR)',
-    date: 'VR Basics & Game Design',
-    events: [
-      { time: 'Hour 1-2', title: 'Basics of VR - Project Creation, Experiencing VR', type: 'workshop', icon: FaLightbulb },
-      { time: 'Hour 3-4', title: 'GDD Presentation - Game Idea, Player Experience', type: 'demo', icon: FaMicrophone },
-      { time: 'Hour 5-8', title: 'Grey Box - Player Mechanics, Game Mechanics', type: 'coding', icon: FaCode },
-    ],
-  },
-  {
-    day: 'Day 4 - Game Polish & Testing',
-    date: 'Final Implementation & Feedback',
-    events: [
-      { time: 'Hour 1-4', title: 'Game Juice - Sound Effects, Particle Effects, Game Manager', type: 'workshop', icon: FaChartBar },
-      { time: 'Hour 5-6', title: 'Play Testing - Experience the Game', type: 'demo', icon: FaMicrophone },
-      { time: 'Hour 7-8', title: 'Feedback & Closing - Suggestions', type: 'main', icon: FaTrophy },
-    ],
-  },
+  // {
+  //   day: 'Day 3 - Extended Reality (VR/AR)',
+  //   date: 'VR Basics & Game Design',
+  //   events: [
+  //     { time: 'Hour 1-2', title: 'Basics of VR - Project Creation, Experiencing VR', type: 'workshop', icon: FaLightbulb },
+  //     { time: 'Hour 3-4', title: 'GDD Presentation - Game Idea, Player Experience', type: 'demo', icon: FaMicrophone },
+  //     { time: 'Hour 5-8', title: 'Grey Box - Player Mechanics, Game Mechanics', type: 'coding', icon: FaCode },
+  //   ],
+  // },
+  // {
+  //   day: 'Day 4 - Game Polish & Testing',
+  //   date: 'Final Implementation & Feedback',
+  //   events: [
+  //     { time: 'Hour 1-4', title: 'Game Juice - Sound Effects, Particle Effects, Game Manager', type: 'workshop', icon: FaChartBar },
+  //     { time: 'Hour 5-6', title: 'Play Testing - Experience the Game', type: 'demo', icon: FaMicrophone },
+  //     { time: 'Hour 7-8', title: 'Feedback & Closing - Suggestions', type: 'main', icon: FaTrophy },
+  //   ],
+  // },
 ]
 
 const getEventStyle = (type: string) => {
@@ -79,29 +79,33 @@ export default function ScheduleSection() {
   return (
     <section className="py-16 bg-background">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl sm:text-5xl font-tech font-bold text-foreground mb-4">Workshop Timeline</h2>
-          <p className="text-lg font-tech text-foreground/70 max-w-2xl mx-auto">4-Day Unity & Extended Reality Workshop - From basics to VR/AR implementation</p>
+        <div className="text-center mb-8 md:mb-12">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-tech font-bold text-foreground mb-4">Workshop Timeline</h2>
+          <p className="text-base md:text-lg font-tech text-foreground/70 max-w-2xl mx-auto px-4">2-Day Unity Workshop - Followed by 48hr GameJam</p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8">
           {scheduleData.map((day, dayIndex) => (
-            <Card key={dayIndex} className="p-6 bg-secondary-background">
-              <div className="mb-6">
-                <h3 className="text-xl font-rajdhani font-bold text-foreground mb-1">{day.day}</h3>
-                <p className="text-sm font-tech text-foreground/60">{day.date}</p>
+            <Card key={dayIndex} className="p-4 md:p-6 bg-secondary-background">
+              <div className="mb-4 md:mb-6">
+                <h3 className="text-lg md:text-xl font-rajdhani font-bold text-foreground mb-1">{day.day}</h3>
+                <p className="text-xs md:text-sm font-tech text-foreground/60">{day.date}</p>
               </div>
 
-              <div className="space-y-4">
+              <div className="space-y-3 md:space-y-4">
                 {day.events.map((event, eventIndex) => (
-                  <div key={eventIndex} className="flex items-center gap-3">
-                    <div className={`inline-flex items-center justify-center w-8 h-8 rounded-base border-2 border-border shadow-shadow ${getEventStyle(event.type)} flex-shrink-0`}>
-                      <event.icon className="text-sm" />
+                  <div key={eventIndex} className="flex items-start md:items-center gap-3">
+                    <div
+                      className={`inline-flex items-center justify-center w-7 h-7 md:w-8 md:h-8 rounded-base border-2 border-border shadow-shadow ${getEventStyle(
+                        event.type
+                      )} flex-shrink-0 mt-0.5 md:mt-0`}
+                    >
+                      <event.icon className="text-xs md:text-sm" />
                     </div>
                     <div className="flex-1 min-w-0">
-                      <div className="flex items-center justify-between">
-                        <span className="font-tech font-medium text-foreground text-sm truncate">{event.title}</span>
-                        <span className="font-code text-sm text-foreground/60 flex-shrink-0 ml-2">{event.time}</span>
+                      <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-1 md:gap-2">
+                        <span className="font-tech font-medium text-foreground text-xs md:text-sm leading-tight">{event.title}</span>
+                        <span className="font-code text-xs md:text-sm text-foreground/60 flex-shrink-0">{event.time}</span>
                       </div>
                     </div>
                   </div>
@@ -109,6 +113,9 @@ export default function ScheduleSection() {
               </div>
             </Card>
           ))}
+        </div>
+        <div className="text-center mt-8 md:mt-12">
+          <p className="text-base md:text-lg font-tech text-foreground/70 max-w-2xl mx-auto px-4">Day 3 and 4 GameJam schedule will be announced during the workshop</p>
         </div>
       </div>
     </section>

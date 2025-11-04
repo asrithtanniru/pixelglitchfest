@@ -266,7 +266,7 @@ export default function HeroSection() {
               rounded-base border-2 border-border shadow-shadow font-code font-bold text-md tracking-wide 
               hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all"
             >
-              <FaGamepad className="mr-1" /> GAME JAM 2025
+              <FaGamepad className="mr-1" /> GAME JAM
             </Button>
           </motion.div>
 
@@ -277,7 +277,7 @@ export default function HeroSection() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 1.1 }}
             >
-              CODE.{' '}
+              PIXEL{' '}
               <motion.span
                 className="inline-block bg-chart-2 text-main-foreground px-3 py-1 rounded-base 
                 border-2 border-border shadow-shadow font-rajdhani"
@@ -286,10 +286,10 @@ export default function HeroSection() {
                 transition={{ duration: 0.8, delay: 1.3 }}
                 whileHover={{ rotate: 0, scale: 1.05 }}
               >
-                CREATE.
+                GLITCH
               </motion.span>{' '}
               <br />
-              COMPETE.
+              FEST
             </motion.h1>
             <motion.div className="relative" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.8, delay: 1.5 }}>
               <h2 className="text-xl sm:text-2xl lg:text-3xl font-tech font-normal text-foreground/80 max-w-3xl mx-auto">
@@ -309,7 +309,7 @@ export default function HeroSection() {
           >
             {[
               { value: '2', label: 'Day Workshop', color: 'chart-1', delay: 0 },
-              { value: '?', label: 'Prize Pool', color: 'chart-2', delay: 0.1 },
+              { value: '?', label: 'Prize Pool', color: 'chart-2', delay: 0.1, isGlitch: true },
               { value: '48', label: 'Hours GameJam', color: 'chart-3', delay: 0.2 },
             ].map((item, index) => (
               <motion.div
@@ -321,7 +321,7 @@ export default function HeroSection() {
               >
                 <Card className="p-6 text-center bg-secondary-background hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all">
                   <motion.div
-                    className={`text-3xl font-tech font-bold text-${item.color} mb-1`}
+                    className={`font-tech font-bold mb-1 ${item.isGlitch ? 'text-6xl text-chart-2' : `text-3xl text-${item.color}`}`}
                     initial={{ scale: 0 }}
                     animate={{ scale: 1 }}
                     transition={{ duration: 0.5, delay: 2.1 + item.delay, type: 'spring', stiffness: 200 }}
@@ -353,18 +353,18 @@ export default function HeroSection() {
           </motion.div>
 
           <motion.div
-            className="flex flex-col sm:flex-row items-center justify-center gap-6 text-foreground/60 text-sm mt-8 font-tech"
+            className="flex flex-col items-center justify-center gap-4 md:gap-6 text-foreground/60 text-xs sm:text-sm mt-8 font-tech"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 2.5 }}
           >
             <motion.div className="flex items-center gap-2" whileHover={{ scale: 1.05 }}>
               <FaCalendarAlt className="text-chart-4" />
-              <span>10-11 October, 2025</span>
+              <span className="text-center">10-13 October, 2025</span>
             </motion.div>
             <motion.div className="flex items-center gap-2" whileHover={{ scale: 1.05 }}>
               <FaMapMarkerAlt className="text-chart-1" />
-              <span>SRM University AP</span>
+              <span className="text-center px-2">ALC - 1, 3rd Floor, Homi J Bhaba Block</span>
             </motion.div>
             <motion.div className="flex items-center gap-2" whileHover={{ scale: 1.05 }}>
               <FaUsers className="text-chart-5" />

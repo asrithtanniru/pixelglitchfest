@@ -71,19 +71,21 @@ const faqs = [
 
 export default function FAQSection() {
   return (
-    <section className="py-16 bg-secondary-background">
+    <section className="py-12 md:py-16 bg-secondary-background">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl sm:text-5xl font-tech font-bold text-foreground mb-4">Pixel Glitch Fest - FAQ</h2>
-          <p className="text-lg font-tech text-foreground/70 max-w-2xl mx-auto">Got questions? We&apos;ve got answers! Here&apos;s everything you need to know about Pixel Glitch Fest</p>
+        <div className="text-center mb-8 md:mb-12">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-tech font-bold text-foreground mb-4">Pixel Glitch Fest - FAQ</h2>
+          <p className="text-base md:text-lg font-tech text-foreground/70 max-w-2xl mx-auto px-4">
+            Got questions? We&apos;ve got answers! Here&apos;s everything you need to know about Pixel Glitch Fest
+          </p>
         </div>
 
         <div className="max-w-4xl mx-auto">
           <Accordion type="single" collapsible>
             {faqs.map((faq, index) => (
-              <AccordionItem key={index} value={`faq-${index}`} className="mb-3">
-                <AccordionTrigger className="font-tech  text-foreground text-left text-lg">{faq.question}</AccordionTrigger>
-                <AccordionContent className="font-tech text-foreground/80 leading-relaxed">{faq.answer}</AccordionContent>
+              <AccordionItem key={index} value={`faq-${index}`} className="mb-2 md:mb-3">
+                <AccordionTrigger className="font-tech text-foreground text-left text-base md:text-lg px-4 md:px-6">{faq.question}</AccordionTrigger>
+                <AccordionContent className="font-tech text-foreground/80 leading-relaxed text-sm md:text-base px-4 md:px-6">{faq.answer}</AccordionContent>
               </AccordionItem>
             ))}
           </Accordion>

@@ -43,6 +43,11 @@ const faqs = [
     answer: "You can either: Register as a team (up to 4 members) or register solo and we'll help you find teammates during the mixer session.",
   },
   {
+    question: 'How do I stay updated and communicate during the event?',
+    answer:
+      "Join our Discord server! It's the primary communication hub for Pixel Glitch Fest. You'll get real-time updates, can find teammates, ask mentors questions, and connect with other participants. Make sure to join before the event starts!",
+  },
+  {
     question: 'What is the schedule like?',
     answer: 'Day 1–2: Workshop (Learning + Practice), Day 3–4: Game Jam (Theme Reveal + Development + Submission), Final Evening: Game Showcase & Results',
   },

@@ -6,7 +6,7 @@ import { FaTrophy, FaMedal } from 'react-icons/fa'
 const prizes = [
   {
     place: '1st Place',
-    title: 'Grand Champion',
+    title: 'Champion',
     amount: '?',
     color: 'chart-1',
     icon: FaTrophy,
@@ -14,7 +14,7 @@ const prizes = [
   },
   {
     place: '2nd Place',
-    title: 'Rising Star',
+    title: 'Runner-Up',
     amount: '?',
     color: 'chart-2',
     icon: FaMedal,

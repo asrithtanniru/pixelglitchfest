@@ -360,7 +360,7 @@ export default function HeroSection() {
           >
             <motion.div className="flex items-center gap-2" whileHover={{ scale: 1.05 }}>
               <FaCalendarAlt className="text-chart-4" />
-              <span className="text-center">10-13 October, 2025</span>
+              <span className="text-center">10-13 November, 2025</span>
             </motion.div>
             <motion.div className="flex items-center gap-2" whileHover={{ scale: 1.05 }}>
               <FaMapMarkerAlt className="text-chart-1" />

@@ -5,11 +5,15 @@ const faqs = [
   {
     question: 'What is Pixel Glitch Fest?',
     answer:
-      "Pixel Glitch Fest is a 4-day celebration of game creation and creativity, hosted by Galactic Geeks (Pangaea Corp) in collaboration with Next Tech Lab, SRM University AP. It's split into two parts: 2-Day Workshop — Learn the essentials of Unity, C#, and game design. 2-Day Game Jam — Team up, build a game, and show off your creativity under a common theme.",
+      "Pixel Glitch Fest is a game creation event hosted by Next Tech Lab, SRM University AP in collaboration with the Game Developers Association of India (GDAI) and Galactic Geeks Studio. It's split into two phases: Phase 1 — A 2-day on-campus workshop focused on game development (April 10–11). Phase 2 — An online Game Jam on Itch.io where you build and submit your game (April 12–19).",
   },
   {
     question: 'When and where is it happening?',
-    answer: 'Venue: SRM University AP Campus. Duration: 4 days total — 2 days of workshop + 2 days of jam.',
+    answer: 'The event runs from April 10th to 19th. The 2-day workshop (Phase 1) is held offline on the SRM University AP campus on April 10th & 11th. The Game Jam (Phase 2) is fully online via Itch.io from April 12th to 19th.',
+  },
+  {
+    question: 'Is there a registration fee?',
+    answer: 'No! This is a completely free event with no registration fees. Just sign up and you\'re in.',
   },
   {
     question: 'Who can participate?',
@@ -18,29 +22,29 @@ const faqs = [
   {
     question: 'What will I learn in the workshop?',
     answer:
-      "You'll get hands-on experience with: Setting up a Unity project and importing assets, Understanding the Unity Editor & project structure, Basics of C# scripting and game logic, Player input handling using the Input System, Cinemachine for camera control, Unity's physics system, Basic UI design and stat updates, Structuring your game with a Game Manager. By the end of Day 2, you'll have the foundation needed to start your own game project.",
+      "The 2-day workshop is conducted by external speakers and mentors from Galactic Geeks. You'll get hands-on experience with game engine fundamentals, scripting, game design principles, and practical development skills. By the end of Day 2, you'll have the foundation needed to start your own game project.",
   },
   {
     question: 'What happens during the Game Jam?',
     answer:
-      "You'll form teams and get a secret theme at the start of Day 3. Over 48 hours, you'll brainstorm, design, and develop a playable game prototype. You'll be mentored by: A Game Designer for concept and mechanics, A 3D Artist / Level Designer for visuals, A Programmer for implementation guidance, A Mentor Panel for direction and troubleshooting.",
+      "The Game Jam runs online from April 12th to 19th on Itch.io. You'll develop and submit your game during this period. The official theme will be provided by GDAI at the start of the Game Jam. Mentors from Galactic Geeks will be available via Discord and online platforms to support you throughout.",
   },
   {
-    question: 'Is there a prize or recognition?',
+    question: 'What are the prizes?',
     answer:
-      "Yes! The top games will be showcased and rewarded based on creativity, design, fun factor, and technical execution. Even if you don't win — you'll leave with a finished game and real teamwork experience.",
+      'The top 3 teams will receive free passes to the India Game Developer Conference (IGDC) from GDAI. Winners also receive digital rewards such as Steam Credits or equivalent gaming-related incentives, provided by Next Tech Lab. All winners are officially recognized across event platforms and communications.',
   },
   {
     question: 'Do I need to bring my own assets or tools?',
-    answer: "Not necessarily. We'll provide a starter asset pack for quick prototyping. But if you want to bring your own 2D/3D assets, music, or tools — go for it!",
+    answer: "Not necessarily. We'll provide guidance during the workshop. But if you want to bring your own 2D/3D assets, music, or tools — go for it!",
   },
   {
     question: 'What software will we use?',
-    answer: 'Unity (latest stable LTS release), Visual Studio Code or Visual Studio Community, Optional: Blender / Krita / Photoshop / Figma (for art and design)',
+    answer: 'You can use any game engine of your choice — Unity, Godot, Unreal Engine, Construct, or any other. The workshop will cover game development fundamentals applicable across engines.',
   },
   {
     question: 'How are teams formed?',
-    answer: "You can either: Register as a team (up to 4 members) or register solo and we'll help you find teammates during the mixer session.",
+    answer: "You can either register as a team (up to 4 members) or register solo and we'll help you find teammates during the mixer session.",
   },
   {
     question: 'How do I stay updated and communicate during the event?',
@@ -49,28 +53,24 @@ const faqs = [
   },
   {
     question: 'What is the schedule like?',
-    answer: 'Day 1–2: Workshop (Learning + Practice), Day 3–4: Game Jam (Theme Reveal + Development + Submission), Final Evening: Game Showcase & Results',
+    answer: 'Phase 1 (April 10–11): 2-day on-campus workshop with sessions by Galactic Geeks mentors. Phase 2 (April 12–19): Online Game Jam on Itch.io — theme reveal, development, and submission.',
   },
   {
     question: 'Who are the mentors?',
     answer:
-      'Industry professionals and experienced developers from Galactic Geeks and Next Tech Lab will be guiding you — people who have built games, shipped prototypes, and tinkered with engines at all scales.',
+      'Speakers and mentors from Galactic Geeks will conduct the workshop sessions and provide mentorship during the Game Jam via Discord and online platforms. GDAI provides industry recognition and judging support.',
   },
   {
     question: 'Do I need to bring a laptop?',
-    answer: "Yes — bring your own laptop with Unity installed. We'll share installation and setup instructions before the event.",
+    answer: "Yes — bring your own laptop for the workshop days. We'll share installation and setup instructions before the event.",
   },
   {
-    question: 'Will there be internet and power backup?',
-    answer: 'Yes. SRM University will provide Wi-Fi and charging stations in the development area.',
-  },
-  {
-    question: 'Food and refreshments?',
-    answer: 'Yes! Expect snacks, caffeine, and chaos. Game dev runs on pizza and energy drinks.',
+    question: 'Where do I submit my game?',
+    answer: 'Games are submitted on Itch.io during the Game Jam phase (April 12–19). Detailed submission instructions will be provided at the start of the Game Jam.',
   },
   {
     question: 'Can we continue the project after the event?',
-    answer: 'Absolutely. You own your project — continue refining it, post it on itch.io, or even publish it!',
+    answer: 'Absolutely. You own your project — continue refining it, keep it on Itch.io, or even publish it!',
   },
 ]
 

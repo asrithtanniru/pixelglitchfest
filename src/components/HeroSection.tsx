@@ -293,7 +293,7 @@ export default function HeroSection() {
             </motion.h1>
             <motion.div className="relative" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.8, delay: 1.5 }}>
               <h2 className="text-xl sm:text-2xl lg:text-3xl font-tech font-normal text-foreground/80 max-w-3xl mx-auto">
-                48 hours to build the next gaming revolution.
+                Workshop. Build. Submit. Win.
                 <motion.div className="inline-block ml-2" whileHover={{ rotate: 3, scale: 1.1 }} initial={{ rotate: -1 }}>
                   <Button className="bg-chart-4 text-main-foreground px-2 py-1 rounded-base text-lg font-rajdhani font-bold transform -rotate-1">Are you ready?</Button>
                 </motion.div>
@@ -310,7 +310,7 @@ export default function HeroSection() {
             {[
               { value: '2', label: 'Day Workshop', color: 'chart-1', delay: 0 },
               { value: '?', label: 'Prize Pool', color: 'chart-2', delay: 0.1, isGlitch: true },
-              { value: '48', label: 'Hours GameJam', color: 'chart-3', delay: 0.2 },
+              { value: '8', label: 'Day GameJam', color: 'chart-3', delay: 0.2 },
             ].map((item, index) => (
               <motion.div
                 key={index}
@@ -360,15 +360,15 @@ export default function HeroSection() {
           >
             <motion.div className="flex items-center gap-2" whileHover={{ scale: 1.05 }}>
               <FaCalendarAlt className="text-chart-4" />
-              <span className="text-center">10-13 November, 2025</span>
+              <span className="text-center">10th - 19th April, 2026</span>
             </motion.div>
             <motion.div className="flex items-center gap-2" whileHover={{ scale: 1.05 }}>
               <FaMapMarkerAlt className="text-chart-1" />
-              <span className="text-center px-2">ALC - 1, 3rd Floor, Homi J Bhaba Block</span>
+              <span className="text-center px-2">SRM University AP Campus (Workshop) + Online via Itch.io (Game Jam)</span>
             </motion.div>
             <motion.div className="flex items-center gap-2" whileHover={{ scale: 1.05 }}>
               <FaUsers className="text-chart-5" />
-              <span>In-Person</span>
+              <span>Offline Workshop + Online Game Jam</span>
             </motion.div>
           </motion.div>
         </div>

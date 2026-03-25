@@ -8,7 +8,7 @@ export default function StatsSection() {
             <div className="text-base md:text-lg lg:text-xl font-tech text-foreground/70">Mentors</div>
           </div>
           <div className="space-y-3">
-            <div className="text-4xl md:text-5xl lg:text-6xl font-orbitron font-bold text-chart-4">2</div>
+            <div className="text-4xl md:text-5xl lg:text-6xl font-orbitron font-bold text-chart-4">3</div>
             <div className="text-base md:text-lg lg:text-xl font-tech text-foreground/70">Winners</div>
           </div>
         </div>

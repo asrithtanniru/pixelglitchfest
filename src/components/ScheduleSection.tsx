@@ -81,7 +81,7 @@ export default function ScheduleSection() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-8 md:mb-12">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-tech font-bold text-foreground mb-4">Workshop Timeline</h2>
-          <p className="text-base md:text-lg font-tech text-foreground/70 max-w-2xl mx-auto px-4">2-Day Unity Workshop - Followed by 48hr GameJam</p>
+          <p className="text-base md:text-lg font-tech text-foreground/70 max-w-2xl mx-auto px-4">2-Day Game Dev Workshop (Offline) — Followed by an Online Game Jam on Itch.io</p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8">
@@ -115,7 +115,7 @@ export default function ScheduleSection() {
           ))}
         </div>
         <div className="text-center mt-8 md:mt-12">
-          <p className="text-base md:text-lg font-tech text-foreground/70 max-w-2xl mx-auto px-4">Day 3 and 4 GameJam schedule will be announced during the workshop</p>
+          <p className="text-base md:text-lg font-tech text-foreground/70 max-w-2xl mx-auto px-4">After the workshop, the Game Jam runs online from April 12th – 19th on Itch.io. Theme will be revealed at the start!</p>
         </div>
       </div>
     </section>

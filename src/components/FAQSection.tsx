@@ -32,7 +32,7 @@ const faqs = [
   {
     question: 'What are the prizes?',
     answer:
-      'The top 3 teams will receive free passes to the India Game Developer Conference (IGDC) from GDAI. Winners also receive digital rewards such as Steam Credits or equivalent gaming-related incentives, provided by Next Tech Lab. All winners are officially recognized across event platforms and communications.',
+      'The top 3 teams will receive free IGDC passes from GDAI, surprise gifts, and official recognition across event platforms and communications.',
   },
   {
     question: 'Do I need to bring my own assets or tools?',

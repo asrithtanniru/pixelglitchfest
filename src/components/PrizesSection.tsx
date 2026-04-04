@@ -10,7 +10,7 @@ const prizes = [
     amount: '?',
     color: 'chart-1',
     icon: FaTrophy,
-    features: ['Free IGDC Passes (from GDAI)', 'Steam Credits / Digital Rewards', 'Official Recognition'],
+    features: ['Free IGDC Passes (from GDAI)', 'Surprise Gifts', 'Official Recognition'],
   },
   {
     place: '2nd Place',
@@ -18,7 +18,7 @@ const prizes = [
     amount: '?',
     color: 'chart-2',
     icon: FaMedal,
-    features: ['Free IGDC Passes (from GDAI)', 'Steam Credits / Digital Rewards', 'Official Recognition'],
+    features: ['Free IGDC Passes (from GDAI)', 'Surprise Gifts', 'Official Recognition'],
   },
   {
     place: '3rd Place',
@@ -26,7 +26,7 @@ const prizes = [
     amount: '?',
     color: 'chart-3',
     icon: FaAward,
-    features: ['Free IGDC Passes (from GDAI)', 'Steam Credits / Digital Rewards', 'Official Recognition'],
+    features: ['Free IGDC Passes (from GDAI)', 'Surprise Gifts', 'Official Recognition'],
   },
 ]
 

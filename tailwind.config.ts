@@ -27,6 +27,7 @@ const config: Config = {
         'space-grotesk': ['var(--font-space-grotesk)', 'sans-serif'],
         'fira-code': ['var(--font-fira-code)', 'monospace'],
         rajdhani: ['var(--font-rajdhani)', 'sans-serif'],
+        pixel: ['var(--font-pixelify-sans)', 'sans-serif'],
         inter: ['var(--font-inter)', 'sans-serif'],
         gaming: ['var(--font-orbitron)', 'var(--font-rajdhani)', 'monospace'],
         tech: ['var(--font-space-grotesk)', 'var(--font-inter)', 'sans-serif'],

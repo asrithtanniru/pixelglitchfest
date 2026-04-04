@@ -10,7 +10,7 @@ const sponsors = {
     { name: 'Game Developers Association of India (GDAI)', logo: '/images/GDAI logo.png' },
   ],
   speakerPartner: [
-    { name: 'Galactic Geeks Studio', logo: null },
+    { name: 'Galactic Geeks Studio', logo: '/images/GG.png' },
   ],
 }
 

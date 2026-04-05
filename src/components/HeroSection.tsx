@@ -358,6 +358,20 @@ export default function HeroSection() {
           </motion.div>
 
           <motion.div
+            className="max-w-3xl mx-auto rounded-base border-2 border-border bg-chart-1/10 px-4 py-4 text-sm sm:text-base font-tech text-foreground/85"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 2.4 }}
+          >
+            <p className="text-center">
+              <span className="font-bold text-chart-2">Workshop:</span> Only 100 seats available for the on-campus workshop, so fill out the registration form to reserve your spot.
+            </p>
+            <p className="text-center mt-2">
+              <span className="font-bold text-chart-1">Participating from outside?</span> You do not need to fill out the form. Just join the jam via Itch.io and join the Discord server.
+            </p>
+          </motion.div>
+
+          <motion.div
             className="flex flex-col items-center justify-center gap-4 md:gap-6 text-foreground/60 text-xs sm:text-sm mt-8 font-tech"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}

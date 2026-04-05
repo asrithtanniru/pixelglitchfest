@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import localFont from 'next/font/local'
-import { Inter, Orbitron, Space_Grotesk, Fira_Code, Rajdhani } from 'next/font/google'
+import { Inter, Orbitron, Space_Grotesk, Fira_Code, Rajdhani, Pixelify_Sans } from 'next/font/google'
 import './globals.css'
 
 const orbitron = Orbitron({
@@ -25,6 +25,12 @@ const rajdhani = Rajdhani({
   subsets: ['latin'],
   variable: '--font-rajdhani',
   weight: ['300', '400', '500', '600', '700'],
+})
+
+const pixelifySans = Pixelify_Sans({
+  subsets: ['latin'],
+  variable: '--font-pixelify-sans',
+  weight: ['400', '500', '600', '700'],
 })
 
 const inter = Inter({
@@ -56,7 +62,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${orbitron.variable} ${spaceGrotesk.variable} ${firaCode.variable} ${rajdhani.variable} ${inter.variable} ${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body
+        className={`${orbitron.variable} ${spaceGrotesk.variable} ${firaCode.variable} ${rajdhani.variable} ${pixelifySans.variable} ${inter.variable} ${geistSans.variable} ${geistMono.variable} antialiased`}
+      >
         {children}
       </body>
     </html>

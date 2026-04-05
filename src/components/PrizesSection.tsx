@@ -1,7 +1,7 @@
 'use client'
 
 import { Card } from '@/components/ui/card'
-import { FaTrophy, FaMedal } from 'react-icons/fa'
+import { FaTrophy, FaMedal, FaAward } from 'react-icons/fa'
 
 const prizes = [
   {
@@ -10,7 +10,7 @@ const prizes = [
     amount: '?',
     color: 'chart-1',
     icon: FaTrophy,
-    features: ['Revealing Soon'],
+    features: ['Free IGDC Passes (from GDAI)', 'Surprise Gifts', 'Official Recognition'],
   },
   {
     place: '2nd Place',
@@ -18,7 +18,15 @@ const prizes = [
     amount: '?',
     color: 'chart-2',
     icon: FaMedal,
-    features: ['Revealing Soon'],
+    features: ['Free IGDC Passes (from GDAI)', 'Surprise Gifts', 'Official Recognition'],
+  },
+  {
+    place: '3rd Place',
+    title: 'Second Runner-Up',
+    amount: '?',
+    color: 'chart-3',
+    icon: FaAward,
+    features: ['Free IGDC Passes (from GDAI)', 'Surprise Gifts', 'Official Recognition'],
   },
 ]
 
@@ -28,8 +36,9 @@ export default function PrizesSection() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-8 md:mb-12">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-tech font-bold text-foreground mb-4">Epic Rewards</h2>
+          <p className="text-base md:text-lg font-tech text-foreground/70 max-w-2xl mx-auto px-4">Top 3 teams win big — powered by GDAI & Next Tech Lab</p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mb-12 md:mb-16 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mb-12 md:mb-16 max-w-5xl mx-auto">
           {prizes.map((prize, index) => (
             <Card
               key={index}
@@ -44,7 +53,6 @@ export default function PrizesSection() {
                 </div>
                 <h3 className="text-lg md:text-xl font-tech font-bold text-foreground/60 mb-2 md:mb-3">{prize.place}</h3>
                 <h4 className="text-2xl md:text-3xl font-tech font-bold text-foreground mb-3 md:mb-4 px-2">{prize.title}</h4>
-                {/* <div className="text-3xl font-tech font-bold text-chart-3 mb-6">{prize.amount}</div> */}
                 <ul className="space-y-2 md:space-y-3 mb-4 md:mb-6">
                   {prize.features.map((feature, featureIndex) => (
                     <li key={featureIndex} className="flex items-center justify-center gap-2 text-sm md:text-base font-tech text-foreground/70">

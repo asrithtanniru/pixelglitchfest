@@ -2,7 +2,7 @@
 
 import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
-import { FaGamepad, FaMusic, FaCog, FaRocket, FaCalendarAlt, FaMapMarkerAlt, FaUsers, FaUnity } from 'react-icons/fa'
+import { FaGamepad, FaMusic, FaCog, FaRocket, FaCalendarAlt, FaMapMarkerAlt, FaUsers, FaUnity, FaExternalLinkAlt } from 'react-icons/fa'
 import { SiGodotengine, SiUnrealengine, SiSharp, SiCplusplus, SiRust, SiBlender, SiConstruct3, SiLua } from 'react-icons/si'
 import { motion } from 'framer-motion'
 
@@ -272,7 +272,7 @@ export default function HeroSection() {
 
           <motion.div className="space-y-4" initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.9 }}>
             <motion.h1
-              className="text-4xl sm:text-6xl lg:text-7xl font-orbitron font-bold text-foreground leading-tight tracking-tight"
+              className="text-4xl sm:text-6xl lg:text-7xl font-pixel font-bold uppercase text-foreground leading-[0.95] tracking-[0.12em] sm:tracking-[0.18em] [text-shadow:4px_4px_0px_rgba(0,0,0,0.18)]"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 1.1 }}
@@ -280,7 +280,7 @@ export default function HeroSection() {
               PIXEL{' '}
               <motion.span
                 className="inline-block bg-chart-2 text-main-foreground px-3 py-1 rounded-base 
-                border-2 border-border shadow-shadow font-rajdhani"
+                border-2 border-border shadow-shadow font-pixel"
                 initial={{ rotate: 0, scale: 0.8 }}
                 animate={{ rotate: 1, scale: 1 }}
                 transition={{ duration: 0.8, delay: 1.3 }}
@@ -293,7 +293,7 @@ export default function HeroSection() {
             </motion.h1>
             <motion.div className="relative" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.8, delay: 1.5 }}>
               <h2 className="text-xl sm:text-2xl lg:text-3xl font-tech font-normal text-foreground/80 max-w-3xl mx-auto">
-                48 hours to build the next gaming revolution.
+                Workshop. Build. Submit. Win.
                 <motion.div className="inline-block ml-2" whileHover={{ rotate: 3, scale: 1.1 }} initial={{ rotate: -1 }}>
                   <Button className="bg-chart-4 text-main-foreground px-2 py-1 rounded-base text-lg font-rajdhani font-bold transform -rotate-1">Are you ready?</Button>
                 </motion.div>
@@ -310,7 +310,7 @@ export default function HeroSection() {
             {[
               { value: '2', label: 'Day Workshop', color: 'chart-1', delay: 0 },
               { value: '?', label: 'Prize Pool', color: 'chart-2', delay: 0.1, isGlitch: true },
-              { value: '48', label: 'Hours GameJam', color: 'chart-3', delay: 0.2 },
+              { value: '8', label: 'Day GameJam', color: 'chart-3', delay: 0.2 },
             ].map((item, index) => (
               <motion.div
                 key={index}
@@ -340,16 +340,21 @@ export default function HeroSection() {
                 size="lg"
                 className="text-lg px-8 py-6 bg-chart-2 hover:bg-chart-2/90 border-2 border-border shadow-shadow hover:translate-x-1 
                 hover:translate-y-1 hover:shadow-none font-tech font-bold"
-                onClick={() => window.open('https://forms.gle/Ax2WcVyeCaMWhL1y7', '_blank')}
+                onClick={() => window.open('https://forms.gle/VPTZZpfd6SPY5gB1A', '_blank')}
               >
                 <FaRocket className="mr-1" /> Register Now
               </Button>
             </motion.div>
-            {/* <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-              <Button variant="neutral" size="lg" className="text-lg px-8 py-6 font-tech">
-                <FaCalendarAlt className="mr-1" /> View Schedule
+            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+              <Button
+                variant="neutral"
+                size="lg"
+                className="text-lg px-8 py-6 font-tech"
+                onClick={() => window.open('https://itch.io/jam/pixel-glitch', '_blank')}
+              >
+                <FaExternalLinkAlt className="mr-1" /> Itch Jam
               </Button>
-            </motion.div> */}
+            </motion.div>
           </motion.div>
 
           <motion.div
@@ -360,15 +365,15 @@ export default function HeroSection() {
           >
             <motion.div className="flex items-center gap-2" whileHover={{ scale: 1.05 }}>
               <FaCalendarAlt className="text-chart-4" />
-              <span className="text-center">10-13 November, 2025</span>
+              <span className="text-center">10th - 19th April, 2026</span>
             </motion.div>
             <motion.div className="flex items-center gap-2" whileHover={{ scale: 1.05 }}>
               <FaMapMarkerAlt className="text-chart-1" />
-              <span className="text-center px-2">ALC - 1, 3rd Floor, Homi J Bhaba Block</span>
+              <span className="text-center px-2">SRM University AP Campus (Workshop) + Online via Itch.io (Game Jam)</span>
             </motion.div>
             <motion.div className="flex items-center gap-2" whileHover={{ scale: 1.05 }}>
               <FaUsers className="text-chart-5" />
-              <span>In-Person</span>
+              <span>Offline Workshop + Online Game Jam</span>
             </motion.div>
           </motion.div>
         </div>

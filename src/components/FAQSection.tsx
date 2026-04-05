@@ -17,7 +17,8 @@ const faqs = [
   },
   {
     question: 'Who can participate?',
-    answer: "Anyone interested in game design, art, development, storytelling, or music — no prior experience required! We'll guide you from zero to your first playable game.",
+    answer:
+      "Anyone interested in game design, art, development, storytelling, or music can participate — no prior experience required. The on-campus workshop has only 100 seats and requires filling out the registration form. If you're participating from outside, you do not need to fill out the form; just join the jam on Itch.io and join the Discord server.",
   },
   {
     question: 'What will I learn in the workshop?',
